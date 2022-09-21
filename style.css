@@ -1,0 +1,68 @@
+    /*Body background color style*/
+
+body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgb(43, 201, 130) 0%, rgb(7, 65, 78) 100%);
+}
+
+    /*Header game neme style*/
+h1 {
+    color: white;
+    text-align: center;
+    
+}
+    /*Board game style*/
+#board { 
+    width: 250px;
+    height: 200px;
+    padding-top: 12%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+    /*board cell style*/
+.cell {
+    border: solid 2px white;
+    border-left: none;
+    border-top: none;
+    height: 50px;
+    font-size: 30pt;
+    text-align:center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: white;
+    cursor: pointer;
+}
+    /*Outside cell borders remove*/
+.cell:nth-child(3n + 3) {
+    border-right: none;
+}
+.cell:nth-child(n + 7) {
+    border-bottom: none;
+}
+    /*Status and game reset style*/
+#gameStatusMessage { 
+    text-align: center;
+    font-size: 18pt;
+    margin-top: 15%;
+    color: white;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding-top: 3px;
+}
+    /*Button reset style*/
+#restart{
+    justify-items: center;
+    margin-top: auto;
+    margin: auto;
+    background-color: rgba(43, 201, 130, 0.055);
+    color: rgba(255, 255, 255, 0.856) ;
+    font-size: 15px;
+    border-radius: 14px;
+    border-color: rgba(240, 247, 244, 0.808);
+    cursor:pointer;
+}
+    
+
+
