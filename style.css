@@ -1,68 +1,68 @@
-    /*Body background color style*/
+*{
+    margin: 0;
+    padding: 0;
+}
 
 body {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, rgb(43, 201, 130) 0%, rgb(7, 65, 78) 100%);
+    
+    background: linear-gradient(90deg, rgb(43, 201, 130) 0%, rgb(4, 54, 65) 100%);
+    font-family:'Times New Roman', Times, serif;
 }
 
-    /*Header game neme style*/
-h1 {
-    color: white;
+header {
+    padding: auto;
+    margin-top: 3%;
     text-align: center;
-    
+    color: white;
+    font-size: 25pt;
 }
-    /*Board game style*/
-#board { 
-    width: 250px;
-    height: 200px;
-    padding-top: 12%;
+
+#board {
+    width: 300px;
+    height: 300px;
     margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 7%;
+    display: flex;
+    flex-wrap:wrap;
 }
-    /*board cell style*/
+
 .cell {
-    border: solid 2px white;
+    border: 2px solid white;
+    width: 98px;
+    height: 98px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 33pt;
     border-left: none;
     border-top: none;
-    height: 50px;
-    font-size: 30pt;
-    text-align:center;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    justify-content: center;
     color: white;
-    cursor: pointer;
 }
-    /*Outside cell borders remove*/
+
 .cell:nth-child(3n + 3) {
     border-right: none;
 }
 .cell:nth-child(n + 7) {
     border-bottom: none;
 }
-    /*Status and game reset style*/
-#gameStatusMessage { 
+
+#gameStatusMensage {
+    padding: auto;
+    margin-top: 9%;
     text-align: center;
-    font-size: 18pt;
-    margin-top: 15%;
+}
+
+#status {
+    font-size: 20pt;
     color: white;
-    margin-left: 35%;
-    margin-right: 35%;
-    padding-top: 3px;
 }
-    /*Button reset style*/
-#restart{
-    justify-items: center;
-    margin-top: auto;
-    margin: auto;
+
+button {
+    padding: 6px;
+    margin-top: 2%;
     background-color: rgba(43, 201, 130, 0.055);
-    color: rgba(255, 255, 255, 0.856) ;
-    font-size: 15px;
-    border-radius: 14px;
-    border-color: rgba(240, 247, 244, 0.808);
-    cursor:pointer;
+    font-size: 10pt;
+    color: white;
+    border-radius: 18px;
+    border-color: white;
 }
-    
-
-
